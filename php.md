@@ -18,7 +18,7 @@ imurRoid 님이 만드신 최고의 만화뷰어입니다.
 ![](https://cdn.discordapp.com/attachments/631112094015815681/762294271205179422/unknown.png)
 
 
-* [자동 설치](/nginx/noapi/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/myComix.sh)
+* [자동 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/myComix.sh)
 
 * 접속 URL : [/www/myComix/index.php](/www/myComix/index.php)
 
