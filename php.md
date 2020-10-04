@@ -13,6 +13,9 @@ subpath를 설정할 필요가 없기 때문에 php 프로그램이 가장 확�
 
 # myComix #
 
+
+## [자동 설치](/nginx/noapi/install?script=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/myComix.sh) ##
+
 URL : [/www/myComix/index.php](/www/myComix/index.php)
 
 참고 : [마이코믹스 만화뷰어 0.17 업데이트](https://sjva.me/bbs/board.php?bo_table=tip&wr_id=1916)
@@ -21,14 +24,13 @@ imurRoid 님이 만드신 최고의 만화뷰어입니다.
 
 ![](https://cdn.discordapp.com/attachments/631112094015815681/762294271205179422/unknown.png)
 
-### 설치명령 ###
+## 설치명령 ##
 ```
 cd /app/data/nginx/www
 git clone https://github.com/imueRoid/myComix
 chmod 777 -R /app/data/nginx/www
 ```
 
-### [자동 설치](/nginx/noapi/install?script=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/myComix.sh) ###
 
 
 
