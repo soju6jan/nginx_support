@@ -45,7 +45,7 @@ chmod 777 -R /app/data/nginx/www/myComix
 <img src="https://user-images.githubusercontent.com/16184466/53615856-35cc5a80-3b9d-11e9-8428-1f2ae05da2c9.png"></img>
 
 
-◼ [자동 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/Organizr.sh)
+◼ [자동 설치](/nginx/normal/install?title=Organizr&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/Organizr.sh)
 
 ◼ 접속 URL : [/www/Organizr/index.php](/www/Organizr/index.php)
 
@@ -66,7 +66,7 @@ chmod 777 -R /app/data/nginx/www/Organizr
 <img src="https://raw.githubusercontent.com/kalcaddle/static/master/images/kod/common2.png"></img>
 
 
-◼ [자동 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/KodExplorer.sh)
+◼ [자동 설치](/nginx/normal/install?title=KodExplorer&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/KodExplorer.sh)
 
 ◼ 접속 URL : [/www/KodExplorer/index.php](/www/KodExplorer/index.php)
 
@@ -90,5 +90,24 @@ EOF
 
 ![](https://cdn.discordapp.com/attachments/631112094015815681/762329491971768340/unknown.png)
 
+-----
+# LibreSpeed #
+
+인터넷 속도 측정 프로그램
+
+<img src="https://camo.githubusercontent.com/388774d2dbb7f7d3377918c359beb644a2809632/68747470733a2f2f7370656564746573742e66646f7373656e612e636f6d2f6d706f745f76362e676966"></img>
 
 
+◼ [자동 설치](/nginx/normal/install?title=speedtest&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/speedtest.sh)
+
+◼ 접속 URL : [/www/speedtest/example-singleServer-full.html](/www/KodExplorer/example-singleServer-full.html)
+
+◼ 홈페이지 : [LibreSpeed speedtest](https://github.com/librespeed/speedtest)
+
+◼ 설치명령
+```
+#!/bin/sh
+cd /app/data/nginx/www
+git clone https://github.com/librespeed/speedtest
+chmod 777 -R /app/data/nginx/www/speedtest
+```
