@@ -15,11 +15,8 @@ subpath를 설정할 필요가 없기 때문에 php 프로그램이 가장 확�
 
 imurRoid 님이 만드신 최고의 만화뷰어입니다.
 
-![](https://cdn.discordapp.com/attachments/631112094015815681/762294271205179422/unknown.png)
-
-<img src="https://cdn.discordapp.com/attachments/631112094015815681/762294271205179422/unknown.png" width="40%" height="30%" title="myComix" alt="myComix"></img>
-
-<img src="https://cdn.discordapp.com/attachments/631112094015815681/762309161752854538/unknown.png" width="40%" height="30%" title="myComix" alt="myComix"></img>
+<img src="https://cdn.discordapp.com/attachments/631112094015815681/762294271205179422/unknown.png" width="31%" height="30%" title="myComix" alt="myComix"></img>
+<img src="https://cdn.discordapp.com/attachments/631112094015815681/762309161752854538/unknown.png" width="55%" height="100%" title="myComix" alt="myComix"></img>
 
 
 
