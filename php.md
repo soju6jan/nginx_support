@@ -74,11 +74,21 @@ chmod 777 -R /app/data/nginx/www/Organizr
 
 ◼ 설치명령
 ```
+#!/bin/sh
 cd /app/data/nginx/www
 git clone https://github.com/kalcaddle/KodExplorer
 chmod 777 -R /app/data/nginx/www/KodExplorer
+ln -s /app/data /app/data/nginx/www/KodExplorer/data/Group/public/home/share/sjva_data
+ln -s /host /app/data/nginx/www/KodExplorer/data/Group/public/home/share/host
+ln -s /mnt /app/data/nginx/www/KodExplorer/data/Group/public/home/share/mnt
+cat <<EOF >/app/data/nginx/www/KodExplorer/config/define.php
+<?php define ('DATA_PATH', '/app/data/nginx/www/KodExplorer/data/');
+EOF
 ```
 
+설치시 기본 데이터 폴더는 ```/app/data/nginx/www/KodExplorer/data/```가 되고 ```/app/data, /host, /mnt``` 폴더가  ```share```폴더 안에 링크됩니다. 필요한 폴더는 위 ```ln -s``` 명령을 참고하여 사용하면 됩니다.
+
+![](https://cdn.discordapp.com/attachments/631112094015815681/762329491971768340/unknown.png)
 
 
 
