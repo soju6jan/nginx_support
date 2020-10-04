@@ -17,7 +17,7 @@ subpath를 설정할 필요가 없기 때문에 php 프로그램이 가장 확�
 -----
 # myComix
 
-imurRoid 님이 만드신 최고의 만화뷰어입니다.
+imurRoid 님이 만드신 최고의 만화뷰어
 
 <img src="https://cdn.discordapp.com/attachments/631112094015815681/762294271205179422/unknown.png" width="31%" height="30%" title="myComix" alt="myComix"></img>
 <img src="https://cdn.discordapp.com/attachments/631112094015815681/762309161752854538/unknown.png" width="55%" height="100%" title="myComix" alt="myComix"></img>
@@ -34,13 +34,13 @@ imurRoid 님이 만드신 최고의 만화뷰어입니다.
 ```
 cd /app/data/nginx/www
 git clone https://github.com/imueRoid/myComix
-chmod 777 -R /app/data/nginx/www
+chmod 777 -R /app/data/nginx/www/myComix
 ```
 
 -----
 # Organizr #
 
-대쉬보드 프로그램입니다.
+대쉬보드 프로그램
 
 <img src="https://user-images.githubusercontent.com/16184466/53615856-35cc5a80-3b9d-11e9-8428-1f2ae05da2c9.png"></img>
 
@@ -55,8 +55,30 @@ chmod 777 -R /app/data/nginx/www
 ```
 cd /app/data/nginx/www
 git clone https://github.com/causefx/Organizr
-chmod 777 -R /app/data/nginx/www
+chmod 777 -R /app/data/nginx/www/Organizr
 ```
+
+-----
+# KodExplorer #
+
+파일매니저 프로그램
+
+<img src="https://raw.githubusercontent.com/kalcaddle/static/master/images/kod/common2.png"></img>
+
+
+◼ [자동 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/KodExplorer.sh)
+
+◼ 접속 URL : [/www/KodExplorer/index.php](/www/KodExplorer/index.php)
+
+◼ 홈페이지 : [KodExplorer](https://github.com/kalcaddle/KodExplorer)
+
+◼ 설치명령
+```
+cd /app/data/nginx/www
+git clone https://github.com/kalcaddle/KodExplorer
+chmod 777 -R /app/data/nginx/www/KodExplorer
+```
+
 
 
 
