@@ -20,18 +20,20 @@ imurRoid 님이 만드신 최고의 만화뷰어입니다.
 
 
 
-* [자동 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/myComix.sh)
+◻ [자동 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/myComix.sh)
 
-* 접속 URL : [/www/myComix/index.php](/www/myComix/index.php)
+◻ 접속 URL : [/www/myComix/index.php](/www/myComix/index.php)
 
-* 홈페이지 : [마이코믹스 만화뷰어 0.17 업데이트](https://sjva.me/bbs/board.php?bo_table=tip&wr_id=1916)
+◻ 홈페이지 : [마이코믹스 만화뷰어 0.17 업데이트](https://sjva.me/bbs/board.php?bo_table=tip&wr_id=1916)
 
-* 설치명령
-    ```
-    cd /app/data/nginx/www
-    git clone https://github.com/imueRoid/myComix
-    chmod 777 -R /app/data/nginx/www
-    ```
+◻ 설치명령
+```
+cd /app/data/nginx/www
+git clone https://github.com/imueRoid/myComix
+chmod 777 -R /app/data/nginx/www
+```
+
+
 
 
 
