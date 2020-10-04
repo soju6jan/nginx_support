@@ -35,14 +35,9 @@ php-fpm7 -R
 이 파일은 도커 시작히 ```/app/start.sh``` 파일보다 먼저 실행되며, SJVA와 상관없는 프로그램을 도커 시작시 실행하고자 할 때 이 파일에 명령을 작성하시면 됩니다.
 
 
-정상적으로 설치완료 후에는
+정상적으로 설치완료 후에는 [NGINX](/www/index.html), [phpinfo](/www/phpinfo.php), [manual](/www/manual.php?filename=home) 3가지 기본 페이지(html, php) 접속이 되며 기존 9998포트를 연결했던 [File Browser](/filebrowser)가 ```/filebrowser```를 통해 접속이 됩니다.
 
-[NGINX](/www/index.html)
-[phpinfo](/www/phpinfo.php)
-[manual](/www/manual.php)
 
-3가지 기본 페이지 접속이 되며,
-[File Browser](/filebrowser)
 
 
 
