@@ -8,8 +8,12 @@ php 프로그램들은 ```/app/data/www``` 하위 폴더에 위치해야하며 `
 
 subpath를 설정할 필요가 없기 때문에 php 프로그램이 가장 확장하기 좋습니다.
 
+목차
+[myComix](#myComix)
+[Organizr](#Organizr)
+
 -----
-# myComix #
+# myComix
 
 imurRoid 님이 만드신 최고의 만화뷰어입니다.
 
@@ -18,13 +22,13 @@ imurRoid 님이 만드신 최고의 만화뷰어입니다.
 
 
 
-◻ [자동 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/myComix.sh)
+◼ [자동 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/myComix.sh)
 
-◻ 접속 URL : [/www/myComix/index.php](/www/myComix/index.php)
+◼ 접속 URL : [/www/myComix/index.php](/www/myComix/index.php)
 
-◻ 홈페이지 : [마이코믹스 만화뷰어 0.17 업데이트](https://sjva.me/bbs/board.php?bo_table=tip&wr_id=1916)
+◼ 홈페이지 : [마이코믹스 만화뷰어 0.17 업데이트](https://sjva.me/bbs/board.php?bo_table=tip&wr_id=1916)
 
-◻ 설치명령
+◼ 설치명령
 ```
 cd /app/data/nginx/www
 git clone https://github.com/imueRoid/myComix
@@ -37,26 +41,20 @@ chmod 777 -R /app/data/nginx/www
 대쉬보드 프로그램입니다.
 
 <img src="https://user-images.githubusercontent.com/16184466/53615856-35cc5a80-3b9d-11e9-8428-1f2ae05da2c9.png"></img>
-<img src="https://cdn.discordapp.com/attachments/631112094015815681/762309161752854538/unknown.png" width="55%" height="100%" title="myComix" alt="myComix"></img>
 
 
-◻ [자동 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/Organizr.sh)
+◼ [자동 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/Organizr.sh)
 
-◻ 접속 URL : [/www/Organizr/index.php](/www/Organizr/index.php)
+◼ 접속 URL : [/www/Organizr/index.php](/www/Organizr/index.php)
 
-◻ 홈페이지 : [Organizr](https://github.com/causefx/Organizr)
+◼ 홈페이지 : [Organizr](https://github.com/causefx/Organizr)
 
-◻ 설치명령
+◼ 설치명령
 ```
 cd /app/data/nginx/www
 git clone https://github.com/causefx/Organizr
 chmod 777 -R /app/data/nginx/www
 ```
-
-
-
-
-
 
 
 
