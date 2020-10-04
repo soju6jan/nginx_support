@@ -11,7 +11,7 @@
    
 -----
 
-## nginx ##
+## About nginx ##
 
 > [공식 홈페이지](https://www.nginx.com/)
  
@@ -20,7 +20,7 @@ nginx는 웹 서버로 SJVA에서는 reverse proxy server 역할을 합니다.
 
 서브 도메인도 설정은 가능하나 그건 개별적으로 설정을 하셔야하며 여기서는 서브 패스 설정만 다룹니다.
 
-## nginx 설치 ##
+## nginx 플러그인 ##
 
 nginx 설치 후에는 도커를 재시작 해야 반영됩니다.
 
