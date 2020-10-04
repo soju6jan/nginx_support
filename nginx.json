@@ -1,0 +1,20 @@
+[
+    {
+        "title":"소개",
+        "type":"url",
+        "url":"https://raw.githubusercontent.com/soju6jan/soju6jan.github.io/master/markdown/nginx/introduce.md",
+        "active":true
+    },
+    {
+        "title":"기본 conf",
+        "type":"url",
+        "url":"https://raw.githubusercontent.com/soju6jan/soju6jan.github.io/master/markdown/nginx/php.md",
+        "active":false
+    },
+    {
+        "title":"php",
+        "type":"url",
+        "url":"https://raw.githubusercontent.com/soju6jan/soju6jan.github.io/master/markdown/nginx/php.md",
+        "active":false
+    }
+]
