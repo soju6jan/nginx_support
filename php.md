@@ -100,7 +100,7 @@ EOF
 
 ◼ [자동 설치](/nginx/normal/install?title=speedtest&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/speedtest.sh)
 
-◼ 접속 URL : [/www/speedtest/example-singleServer-full.html](/www/KodExplorer/example-singleServer-full.html)
+◼ 접속 URL : [/www/speedtest/example-singleServer-full.html](/www/speedtest/example-singleServer-full.html)
 
 ◼ 홈페이지 : [LibreSpeed speedtest](https://github.com/librespeed/speedtest)
 
