@@ -8,11 +8,6 @@ php 프로그램들은 ```/app/data/www``` 하위 폴더에 위치해야하며 `
 
 subpath를 설정할 필요가 없기 때문에 php 프로그램이 가장 확장하기 좋습니다.
 
-프로그램
-
-[myComix](#myComix)
-
-[Organizr](#Organizr)
 
 -----
 # myComix
@@ -111,3 +106,10 @@ cd /app/data/nginx/www
 git clone https://github.com/librespeed/speedtest
 chmod 777 -R /app/data/nginx/www/speedtest
 ```
+
+
+# RompR #
+MPD 클라이언트
+
+◼ 홈페이지 : [RompR](https://github.com/fatg3erman/RompR)
+
