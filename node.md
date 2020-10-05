@@ -1,18 +1,18 @@
 # Node.js #
 
-◼ [라이브러리 설치](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/module_node.sh)
+◼ [라이브러리 설치](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/module_node.sh&arg=install)
 ```
 #!/bin/sh
 mkdir -p /app/data/nginx/nodejs
 apk update
 apk upgrade
-apk add nodejs, npm
+apk add nodejs npm
 ```
 
-◼ [라이브러리 삭제](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/module_node_uninstall.sh)
+◼ [라이브러리 삭제](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/module_node_uninstall.sh&arg=uninstall)
 ```
 #!/bin/sh
-apk del nodejs, npm
+apk del nodejs npm
 ```
 
 
@@ -66,8 +66,6 @@ mstream -m /path/to/music
 홈페이지에서 실행 명령에 대한 옵션을 확인한 후 command에 등록하세요.
 
 <img src="https://cdn.discordapp.com/attachments/631112094015815681/762606741736652800/unknown.png" width="50%" height="100%"></img>
-
-
 
 
 ◼ conf
