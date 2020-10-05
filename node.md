@@ -35,7 +35,7 @@ v10.19.0
 <img src="https://raw.githubusercontent.com/IrosTheBeggar/mStream/master/public/img/designs/mstreamv4.png"></img>
 
 
-◼ [자동 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/mstream.sh)
+◼ [설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/mStream.sh&arg=install) / [삭제](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/mStream.sh&arg=uninstall)
 
 ◼ 접속 URL : [/mstrem/](/mstrem/)
 
