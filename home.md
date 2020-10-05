@@ -32,9 +32,8 @@ docker run -d \
   --privileged soju6jan/sjva:0.2
 ```
 
-
 > ```-v /root/docker/sjva:/app/data``` : 개인에 맞게 수정하세요.
->
+> 
 > ```-v /mnt:/mnt```
 > 
 > ```-v /:/host``` host 루트를 /host로 링크하시는 것을 추천합니다.

@@ -2,19 +2,19 @@
     {
         "title":"소개",
         "type":"url",
-        "url":"https://raw.githubusercontent.com/soju6jan/soju6jan.github.io/master/markdown/nginx/introduce.md",
+        "url":"https://raw.githubusercontent.com/soju6jan/nginx_support/main/home.md",
         "active":true
     },
     {
         "title":"기본 conf",
         "type":"url",
-        "url":"https://raw.githubusercontent.com/soju6jan/soju6jan.github.io/master/markdown/nginx/php.md",
+        "url":"https://raw.githubusercontent.com/soju6jan/nginx_support/main/basic.md",
         "active":false
     },
     {
         "title":"php",
         "type":"url",
-        "url":"https://raw.githubusercontent.com/soju6jan/soju6jan.github.io/master/markdown/nginx/php.md",
+        "url":"https://raw.githubusercontent.com/soju6jan/nginx_support/main/php.md",
         "active":false
     }
 ]
