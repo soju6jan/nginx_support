@@ -1,28 +1,24 @@
 # NGINX
-
-1. [소개](/www/manual.php?filename=home)
-2. [기본 설정]((/www/manual.php?filename=basic)
-3. 프로그램
+1. [매뉴얼](/www/manual.php?filename=home)
+2. [프로그램 설치](/www/manual.php?filename=basic)
    1. [php](/www/manual.php?filename=php)
    2. [Node.js](/www/manual.php?filename=node)
    3. [python](/www/manual.php?filename=python)
    4. [Go](/www/manual.php?filename=go)
    5. [Java](/www/manual.php?filename=java)
-   
 -----
 
-## About nginx ##
+# About nginx ##
 
 > [공식 홈페이지](https://www.nginx.com/)
  
-
 nginx는 웹 서버로 SJVA에서는 reverse proxy server 역할을 합니다.
-
 
 서브 도메인도 설정은 가능하나 그건 개별적으로 설정을 하셔야하며 여기서는 서브 패스 설정만 다룹니다.
 
+
 ----
-## 도커 실행 명령
+# 도커 실행 명령
 ```
 docker run -d \
   --name sjva \
@@ -36,17 +32,21 @@ docker run -d \
 
 이 명령으로 도커를 만들었다는 가정하에 설명합니다.
 
-
 > ```-v /:/host``` host 루트를 /host로 링크하시는 것을 추천합니다.
 
-----
-## nginx 플러그인 ##
 
-nginx 플러그인 자체는 특별한 기능은 없고 오직 설치, 삭제와 conf 파일 수정할 수 있는 기능이 다입니다.
-외부 프로그램을 설치하는 방법은 자동설치를 지원할 수도 있고, 안 할 수도 있는데 기본이 되는 것은 ```docker exec -it sjva /bin/sh``` 와 같이 도커내에 진입하여 명령을 내리는 것을 기본으로 합니다.
+----
+# nginx 플러그인 ##
+
+이 플러그인은 외부 프로그램의 간단한 설치와 subpath 설정을 통한 편한 연결을 목표로 합니다.
+
+예를 들어 예전에는 9998 포트도 같이 열어서 ```filebrowser```를 연결했다면, 이제는 ```http://내도메인/filebrowser```와 같은 형식으로 ```filebrowser``` 연결을 할 수 있게 됩니다.
+
+nginx 플러그인 자체는 특별한 기능은 없고 오직 설치, 삭제와 conf 파일 수정할 수 있는 기능만 있습니다.
+
+외부 프로그램을 설치에 스크립트 설치를 지원할 수도 있고, 안 할 수도 있는데 ```docker exec -it sjva /bin/sh``` 와 같이 도커내에 진입하여 shell에서 명령을 내리는 것을 기본으로 합니다.
 
 > 아니면 ```python``` 환경의 ```webssh```를 설치하고 도커내에서 ```sshd```을 직접 돌려서 브라우저 상에서 명령을 내리는 방법도 있으니 참고하시기 바랍니다.
-
 
 nginx 설치 후에는 SJVA 재시작이 아닌 도커 재시작을 해야됩니다.
 
@@ -60,18 +60,16 @@ php-fpm7 -R
 
 이 파일은 도커 시작히 ```/app/start.sh``` 파일보다 먼저 실행됩니다. 
 
-SJVA와 상관없는 프로그램을 도커 시작시 실행하고자 할 때 이 파일에 명령을 작성하시면 됩니다.
+php제외한 다른 프로그램들은 어떤 방식이든 프로세스를 구동해야합니다.
+
+SJVA command 기능을 통해 할 수도 있지만, SJVA와 상관없이 구동하고 싶다면 이 파일을 편집하시면 됩니다.
 
 정상적으로 설치완료 후에는 [index.html](/www/index.html), [phpinfo.php](/www/phpinfo.php), [manual.php](/www/manual.php?filename=home) 3가지 기본 페이지 접속이 되며, 기존 9998포트를 연결했던 [File Browser](/filebrowser)가 ```/filebrowser``` 서브패스를 통해서도 접속이 됩니다.
-
-이 플러그인의 목적
-1. 외부 프로그램의 간단한 설치
-2. subpath 설정을 통해 간단한 연결
 
 
 
 ----
-## conf 파일 ##
+# conf 파일 #
 
 nginx의 reverse proxy server 기능을 사용하기 위해서는 conf파일을 수정할 수 있어야 합니다.
 
@@ -81,5 +79,14 @@ nginx의 reverse proxy server 기능을 사용하기 위해서는 conf파일을 
 
 
 
-최초 설치시에는
+
+----
+# 프로그램 #
+
+각장 확장하기 편한 언어는 php이고, 그외 환경은 앱 자체에서 subpath를 지원해야하는 경우가 많습니다.
+
+간단히 몇개만 테스트하면서 작성하였고 내용은 계속 추가될 수도 있으며, 유저분들도 추천할 만한 앱이 있다면 소개 부탁드립니다.
+
+imueRoid님의 마이코믹스나 mStream은 강추합니다.
+
 

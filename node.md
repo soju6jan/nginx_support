@@ -17,12 +17,11 @@ fi
 ```
 
 
-
-
-
 최근 웹앱은 Node.js 기반으로 제작되는 경우가 많습니다.
 
 웹앱 자체에서 subpath를 지원해야 연결할 수 있으며, command 플러그인을 이용하여 바이너리를 먼저 실행해야 합니다.
+
+현재 설치되는 버전입니다.
 
 ```
 /app # node --version
@@ -50,17 +49,17 @@ v10.19.0
 #!/bin/sh
 if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
     cd /app/data/nginx/nodejs
-    git clone https://github.com/IrosTheBeggar/mStream.git
-    cd mStream
-    git checkout relative-urls
+    git clone https://github.com/silverwind/droppy
+    cd droppy
     npm install
     npm link
 else
-    npm install mstream
+    ps -eo pid,args | grep droppy | grep -v grep | awk '{print $1}' | xargs -r kill -9
+    npm uninstall droppy
 fi
 ```
 
-◼ 실행
+◼ 실행 예
 ```
 # Boot mStream with the config file
 mstream -j /path/to/config.json
@@ -93,7 +92,7 @@ location /mstream/   {
 
 ◼ 접속 URL : [/droppy/](/droppy/)
 
-◼ 홈페이지 : [github]](https://github.com/silverwind/droppy)
+◼ 홈페이지 : [github](https://github.com/silverwind/droppy)
 
 ◼ 스크립트
 ```
@@ -104,20 +103,20 @@ if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
     cd droppy
     npm install
     npm link
-    mkdir -p /app/data/nginx/nodejs/droppy/data/files
-    mkdir -p /app/data/nginx/nodejs/droppy/data/config
+    mkdir -p /app/data/nginx/nodejs/droppy/config
+    echo fs.inotify.max_user_watches=524288 | tee -a /etc/sysctl.conf
+    sysctl -p
+    chmod 777 -R /app/data/nginx/nodejs/droppy
 else
     ps -eo pid,args | grep droppy | grep -v grep | awk '{print $1}' | xargs -r kill -9
     npm uninstall droppy
 fi
 ```
 
-◼ 실행
+◼ 실행 예
 ```
 droppy start -f /app/data -c /app/data/nginx/nodejs/droppy/config
 ```
-홈페이지에서 실행 명령에 대한 옵션을 확인한 후 command에 등록하세요.
-
 
 ◼ conf
 ```
