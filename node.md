@@ -1,6 +1,6 @@
 # Node.js #
 
-◼ [라이브러리 설치](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/module_node.sh&arg=install) / [라이브러리 삭제](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/module_node_uninstall.sh&arg=uninstall)
+◼ [라이브러리 설치](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/module_node.sh&arg=install) / [라이브러리 삭제](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/module_node_uninstall.sh&arg=uninstall)
 ```
 #!/bin/sh
 if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
@@ -39,7 +39,7 @@ v10.19.0
 <img src="https://raw.githubusercontent.com/IrosTheBeggar/mStream/master/public/img/designs/mstreamv4.png"></img>
 
 
-◼ [설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/mStream.sh&arg=install) / [삭제](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/mStream.sh&arg=uninstall)
+◼ [설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/mStream.sh&arg=install) / [삭제](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/mStream.sh&arg=uninstall)
 
 ◼ 접속 URL : [/mstrem/](/mstrem/)
 
@@ -84,87 +84,57 @@ location /mstream/   {
 ```
 
 
-
-
-
 -----
-# Organizr #
+# droppy
 
-대쉬보드 프로그램
+파일 서버
 
-<img src="https://user-images.githubusercontent.com/16184466/53615856-35cc5a80-3b9d-11e9-8428-1f2ae05da2c9.png"></img>
+◼ [설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/droppy.sh&arg=install) / [삭제](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/droppy.sh&arg=uninstall)
 
+◼ 접속 URL : [/droppy/](/droppy/)
 
-◼ [자동 설치](/nginx/normal/install?title=Organizr&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/Organizr.sh)
+◼ 홈페이지 : [github]](https://github.com/silverwind/droppy)
 
-◼ 접속 URL : [/www/Organizr/index.php](/www/Organizr/index.php)
-
-◼ 홈페이지 : [Organizr](https://github.com/causefx/Organizr)
-
-◼ 설치명령
-```
-cd /app/data/nginx/www
-git clone https://github.com/causefx/Organizr
-chmod 777 -R /app/data/nginx/www/Organizr
-```
-
------
-# KodExplorer #
-
-파일매니저 프로그램
-
-<img src="https://raw.githubusercontent.com/kalcaddle/static/master/images/kod/common2.png"></img>
-
-
-◼ [자동 설치](/nginx/normal/install?title=KodExplorer&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/KodExplorer.sh)
-
-◼ 접속 URL : [/www/KodExplorer/index.php](/www/KodExplorer/index.php)
-
-◼ 홈페이지 : [KodExplorer](https://github.com/kalcaddle/KodExplorer)
-
-◼ 설치명령
+◼ 스크립트
 ```
 #!/bin/sh
-cd /app/data/nginx/www
-git clone https://github.com/kalcaddle/KodExplorer
-chmod 777 -R /app/data/nginx/www/KodExplorer
-ln -s /app/data /app/data/nginx/www/KodExplorer/data/Group/public/home/share/sjva_data
-ln -s /host /app/data/nginx/www/KodExplorer/data/Group/public/home/share/host
-ln -s /mnt /app/data/nginx/www/KodExplorer/data/Group/public/home/share/mnt
-cat <<EOF >/app/data/nginx/www/KodExplorer/config/define.php
-<?php define ('DATA_PATH', '/app/data/nginx/www/KodExplorer/data/');
-EOF
+if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
+    cd /app/data/nginx/nodejs
+    git clone https://github.com/silverwind/droppy
+    cd droppy
+    npm install
+    npm link
+    mkdir -p /app/data/nginx/nodejs/droppy/data/files
+    mkdir -p /app/data/nginx/nodejs/droppy/data/config
+else
+    ps -eo pid,args | grep droppy | grep -v grep | awk '{print $1}' | xargs -r kill -9
+    npm uninstall droppy
+fi
 ```
 
-설치시 기본 데이터 폴더는 ```/app/data/nginx/www/KodExplorer/data/```가 되고 ```/app/data, /host, /mnt``` 폴더가  ```share```폴더 안에 링크됩니다. 필요한 폴더는 위 ```ln -s``` 명령을 참고하여 사용하면 됩니다.
-
-![](https://cdn.discordapp.com/attachments/631112094015815681/762329491971768340/unknown.png)
-
------
-# LibreSpeed #
-
-인터넷 속도 측정 프로그램
-
-<img src="https://camo.githubusercontent.com/388774d2dbb7f7d3377918c359beb644a2809632/68747470733a2f2f7370656564746573742e66646f7373656e612e636f6d2f6d706f745f76362e676966"></img>
-
-
-◼ [자동 설치](/nginx/normal/install?title=speedtest&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/speedtest.sh)
-
-◼ 접속 URL : [/www/speedtest/example-singleServer-full.html](/www/speedtest/example-singleServer-full.html)
-
-◼ 홈페이지 : [LibreSpeed speedtest](https://github.com/librespeed/speedtest)
-
-◼ 설치명령
+◼ 실행
 ```
-#!/bin/sh
-cd /app/data/nginx/www
-git clone https://github.com/librespeed/speedtest
-chmod 777 -R /app/data/nginx/www/speedtest
+droppy start -f /app/data -c /app/data/nginx/nodejs/droppy/config
+```
+홈페이지에서 실행 명령에 대한 옵션을 확인한 후 command에 등록하세요.
+
+
+◼ conf
+```
+location /droppy/ {
+    rewrite /droppy/(.*)$ /$1 break;
+    proxy_pass http://127.0.0.1:8989/;
+    proxy_redirect off;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+    proxy_set_header Host $host;
+}
 ```
 
------
-# RompR #
-MPD 클라이언트
 
-◼ 홈페이지 : [RompR](https://github.com/fatg3erman/RompR)
+
+
+
+
 
