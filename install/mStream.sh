@@ -7,5 +7,6 @@ if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
     npm install
     npm link
 else
+    ps -eo pid,args | grep mstream | grep -v grep | awk '{print $1}' | xargs -r kill -9
     npm install mstream
 fi

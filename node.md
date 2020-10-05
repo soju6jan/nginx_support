@@ -1,19 +1,23 @@
 # Node.js #
 
-◼ [라이브러리 설치](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/module_node.sh&arg=install)
+◼ [라이브러리 설치](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/module_node.sh&arg=install) / [라이브러리 삭제](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/module_node_uninstall.sh&arg=uninstall)
 ```
 #!/bin/sh
-mkdir -p /app/data/nginx/nodejs
-apk update
-apk upgrade
-apk add nodejs npm
+if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
+    cd /app/data/nginx/nodejs
+    git clone https://github.com/IrosTheBeggar/mStream.git
+    cd mStream
+    git checkout relative-urls
+    npm install
+    npm link
+else
+    ps -eo pid,args | grep mstream | grep -v grep | awk '{print $1}' | xargs -r kill -9
+    npm install mstream
+fi
 ```
 
-◼ [라이브러리 삭제](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/module_node_uninstall.sh&arg=uninstall)
-```
-#!/bin/sh
-apk del nodejs npm
-```
+
+
 
 
 최근 웹앱은 Node.js 기반으로 제작되는 경우가 많습니다.
@@ -41,15 +45,19 @@ v10.19.0
 
 ◼ 홈페이지 : [mstream.io](https://www.mstream.io/)
 
-◼ 설치명령
+◼ 스크립트
 ```
 #!/bin/sh
-cd /app/data/nginx/nodejs
-git clone https://github.com/IrosTheBeggar/mStream.git
-cd mStream
-git checkout relative-urls
-npm install
-npm link
+if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
+    cd /app/data/nginx/nodejs
+    git clone https://github.com/IrosTheBeggar/mStream.git
+    cd mStream
+    git checkout relative-urls
+    npm install
+    npm link
+else
+    npm install mstream
+fi
 ```
 
 ◼ 실행
@@ -74,18 +82,6 @@ location /mstream/   {
     proxy_pass http://127.0.0.1:3000/;
 }
 ```
-
-
-
-
-
-
-
-Quick Test Configurations
-Command line flags can be used to test different mStream configurations
-
-
-
 
 
 

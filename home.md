@@ -19,8 +19,6 @@
 nginx는 웹 서버로 SJVA에서는 reverse proxy server 역할을 합니다.
 
 
-
-
 서브 도메인도 설정은 가능하나 그건 개별적으로 설정을 하셔야하며 여기서는 서브 패스 설정만 다룹니다.
 
 ----
@@ -65,6 +63,11 @@ php-fpm7 -R
 SJVA와 상관없는 프로그램을 도커 시작시 실행하고자 할 때 이 파일에 명령을 작성하시면 됩니다.
 
 정상적으로 설치완료 후에는 [index.html](/www/index.html), [phpinfo.php](/www/phpinfo.php), [manual.php](/www/manual.php?filename=home) 3가지 기본 페이지 접속이 되며, 기존 9998포트를 연결했던 [File Browser](/filebrowser)가 ```/filebrowser``` 서브패스를 통해서도 접속이 됩니다.
+
+이 플러그인의 목적
+1. 외부 프로그램의 간단한 설치
+2. subpath 설정을 통해 간단한 연결
+
 
 
 ----
