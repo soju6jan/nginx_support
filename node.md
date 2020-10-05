@@ -38,7 +38,7 @@ v10.19.0
 <img src="https://raw.githubusercontent.com/IrosTheBeggar/mStream/master/public/img/designs/mstreamv4.png"></img>
 
 
-◼ [설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/mStream.sh&arg=install) / [삭제](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/mStream.sh&arg=uninstall)
+◼ [설치](/nginx/normal/install?title=mStream&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/mStream.sh&arg=install) / [삭제](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/mStream.sh&arg=uninstall)
 
 ◼ 접속 URL : [/mstrem/](/mstrem/)
 
@@ -88,7 +88,7 @@ location /mstream/   {
 
 파일 서버
 
-◼ [설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/droppy.sh&arg=install) / [삭제](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/droppy.sh&arg=uninstall)
+◼ [설치](/nginx/normal/install?title=droppy&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/droppy.sh&arg=install) / [삭제](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/droppy.sh&arg=uninstall)
 
 ◼ 접속 URL : [/droppy/](/droppy/)
 
