@@ -19,7 +19,7 @@ imurRoid 님이 만드신 최고의 만화뷰어
 
 
 
-◼ [자동 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/myComix.sh)
+◼ [자동 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/php/myComix.sh)
 
 ◼ 접속 URL : [/www/myComix/index.php](/www/myComix/index.php)
 
@@ -40,7 +40,7 @@ chmod 777 -R /app/data/nginx/www/myComix
 <img src="https://user-images.githubusercontent.com/16184466/53615856-35cc5a80-3b9d-11e9-8428-1f2ae05da2c9.png"></img>
 
 
-◼ [자동 설치](/nginx/normal/install?title=Organizr&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/Organizr.sh)
+◼ [자동 설치](/nginx/normal/install?title=Organizr&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/php/Organizr.sh)
 
 ◼ 접속 URL : [/www/Organizr/index.php](/www/Organizr/index.php)
 
@@ -61,7 +61,7 @@ chmod 777 -R /app/data/nginx/www/Organizr
 <img src="https://raw.githubusercontent.com/kalcaddle/static/master/images/kod/common2.png"></img>
 
 
-◼ [자동 설치](/nginx/normal/install?title=KodExplorer&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/KodExplorer.sh)
+◼ [자동 설치](/nginx/normal/install?title=KodExplorer&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/php/KodExplorer.sh)
 
 ◼ 접속 URL : [/www/KodExplorer/index.php](/www/KodExplorer/index.php)
 
@@ -93,7 +93,7 @@ EOF
 <img src="https://camo.githubusercontent.com/388774d2dbb7f7d3377918c359beb644a2809632/68747470733a2f2f7370656564746573742e66646f7373656e612e636f6d2f6d706f745f76362e676966"></img>
 
 
-◼ [자동 설치](/nginx/normal/install?title=speedtest&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/speedtest.sh)
+◼ [자동 설치](/nginx/normal/install?title=speedtest&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/php/speedtest.sh)
 
 ◼ 접속 URL : [/www/speedtest/example-singleServer-full.html](/www/speedtest/example-singleServer-full.html)
 
