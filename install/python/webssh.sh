@@ -1,8 +1,17 @@
 #!/bin/sh
 if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
-    pip install --upgrade pip
-    pip install --upgrade setuptools
+    pip install --upgrade pip setuptools
     apk add gcc g++ make libffi-dev openssl-dev
     pip install webssh
+    wget -O /usr/local/lib/python2.7/site-packages/webssh/static/css/fonts/D2Coding.ttf https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/python/D2Coding.ttf
+    #wssh --font=D2Coding.ttf --origin=* --debug --timeout=600
+elif [ "$1" == "install_sshd" ]; then
+    apk add openssh
+    sed -i 's/#PermitRootLogin/PermitRootLogin/' /etc/ssh/sshd_config 
+    sed -i 's/prohibit-password/yes/' /etc/ssh/sshd_config 
+    sed -i 's/#PermitEmptyPasswords/PermitEmptyPasswords/' /etc/ssh/sshd_config
+    ssh-keygen -b 2048 -t rsa -f /root/.ssh/id_rsa -q -N ""
+    cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+    #/usr/sbin/sshd -h ~/.ssh/authorized_keys    
 else
 fi
