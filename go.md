@@ -12,10 +12,6 @@ SJVA에 기본 포함된 파일브라우저가 go로 작성된 프로그램입�
 
 PMS Proxy
 
-subpath를 지원하지 않고 nginx 설정만으로 연결합니다.
-
-> 웹페이지만 띄우고 실사용 테스트는 아직 못함.
-
 
 ◼ [설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/go/xTeVe.sh&arg=install)
 
