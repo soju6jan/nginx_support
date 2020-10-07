@@ -14,4 +14,5 @@ elif [ "$1" == "install_sshd" ]; then
     cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
     #/usr/sbin/sshd -h ~/.ssh/authorized_keys    
 else
+    echo 'uninstall'
 fi
