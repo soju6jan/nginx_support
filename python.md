@@ -20,25 +20,15 @@ SJVA 도커내에 ssh server를 설치하면 호스트에 접속해서 ```docker
 ◼ 스크립트
 ```
 #!/bin/sh
-if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
-    pip install --upgrade pip setuptools
-    apk add gcc g++ make libffi-dev openssl-dev
-    pip install webssh
-    wget -O /usr/local/lib/python2.7/site-packages/webssh/static/css/fonts/D2Coding.ttf https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/python/D2Coding.ttf
-elif [ "$1" == "install_sshd" ]; then
-    apk add openssh
-    sed -i 's/#PermitRootLogin/PermitRootLogin/' /etc/ssh/sshd_config 
-    sed -i 's/prohibit-password/yes/' /etc/ssh/sshd_config 
-    sed -i 's/#PermitEmptyPasswords/PermitEmptyPasswords/' /etc/ssh/sshd_config
-    ssh-keygen -b 2048 -t rsa -f /root/.ssh/id_rsa -q -N ""
-    cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-else
-fi
+pip install --upgrade pip setuptools
+apk add gcc g++ make libffi-dev openssl-dev
+pip install webssh
+wget -O /usr/local/lib/python2.7/site-packages/webssh/static/css/fonts/D2Coding.ttf https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/python/D2Coding.ttf
 ```
 
 ◼ 실행 예
 ```
-wssh --font=D2Coding.ttf --origin=* --debug --timeout=600
+wssh --font=D2Coding.ttf --origin=* --debug --timeout=600 --wpintvl=200
 ```
 
 ◼ conf
@@ -51,8 +41,22 @@ location /tautulli/ {
 }
 ```
 
+## ssh server ##
+
 ◼ [SJVA도커에 ssh server 설치](/nginx/normal/install?title=sshd&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/python/webssh.sh&arg=install_sshd)
 
+◼ 스크립트
+```
+apk add openssh
+sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config 
+sed -i 's/#PermitEmptyPasswords no/PermitEmptyPasswords yes/' /etc/ssh/sshd_config
+ssh-keygen -b 2048 -t rsa -f ~/.ssh/id_rsa -q -N ""
+cat ~/.ssh/id_rsa >> ~/.ssh/authorized_keys
+#cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+passwd -d root
+```
+암호 없이 간단히 접속할 수 있는 설정입니다.
 
 ◼ ssh-server 실행
 ```
