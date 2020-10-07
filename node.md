@@ -49,13 +49,13 @@ v10.19.0
 #!/bin/sh
 if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
     cd /app/data/nginx/nodejs
-    git clone https://github.com/silverwind/droppy
-    cd droppy
+    git clone -b relative-urls --single-branch https://github.com/IrosTheBeggar/mStream.git --depth 1
+    cd mStream
     npm install
     npm link
 else
-    ps -eo pid,args | grep droppy | grep -v grep | awk '{print $1}' | xargs -r kill -9
-    npm uninstall droppy
+    ps -eo pid,args | grep mstream | grep -v grep | awk '{print $1}' | xargs -r kill -9
+    npm uninstall mstream
 fi
 ```
 
@@ -69,6 +69,8 @@ mstream -u username -x password
 
 # set music directory
 mstream -m /path/to/music
+
+mstream -m  /app/data/mount_viewer/음악
 ```
 홈페이지에서 실행 명령에 대한 옵션을 확인한 후 command에 등록하세요.
 
