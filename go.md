@@ -35,7 +35,9 @@ if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
     chmod 777 xteve
     ln -s /app/data/nginx/go/xTeVe/xteve /usr/bin/xteve
 else
+    echo 'uninstall'
 fi
+
 ```
 
 ◼ 실행 예
