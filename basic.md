@@ -8,6 +8,8 @@ Rclone WEB GUI
 
 ◼ [홈페이지](https://rclone.org/gui/)
 
+◼ 접속 URL : [/rcd/](/rcd/)
+
 ◼ 실행 예
 ```
 /app/bin/Linux/rclone rcd --config /app/data/db/rclone.conf --rc-user=sjva --rc-pass=sjva --rc-allow-origin="*" --rc-web-gui --rc-web-gui-update --rc-web-gui-no-open-browser --rc-baseurl rcd --rc-addr 127.0.0.1:5572
@@ -32,6 +34,8 @@ location /rcd/ {
 launcher_guacamole 플러그인을 통해 guacamole을 설치한 후 연동합니다. 
 
 ◼ 참고 글 : [https://soju6jan.com/archives/1490](https://soju6jan.com/archives/1490)
+
+◼ 접속 URL : [/guacamole](/guacamole)
 
 ◼ conf
 ```
