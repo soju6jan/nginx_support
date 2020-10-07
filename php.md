@@ -33,27 +33,6 @@ chmod 777 -R /app/data/nginx/www/myComix
 ```
 
 -----
-# Organizr #
-
-대쉬보드 프로그램
-
-<img src="https://user-images.githubusercontent.com/16184466/53615856-35cc5a80-3b9d-11e9-8428-1f2ae05da2c9.png"></img>
-
-
-◼ [자동 설치](/nginx/normal/install?title=Organizr&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/php/Organizr.sh)
-
-◼ 접속 URL : [/www/Organizr/index.php](/www/Organizr/index.php)
-
-◼ 홈페이지 : [Organizr](https://github.com/causefx/Organizr)
-
-◼ 설치명령
-```
-cd /app/data/nginx/www
-git clone https://github.com/causefx/Organizr
-chmod 777 -R /app/data/nginx/www/Organizr
-```
-
------
 # KodExplorer #
 
 파일매니저 프로그램
@@ -84,6 +63,28 @@ EOF
 설치시 기본 데이터 폴더는 ```/app/data/nginx/www/KodExplorer/data/```가 되고 ```/app/data, /host, /mnt``` 폴더가  ```share```폴더 안에 링크됩니다. 필요한 폴더는 위 ```ln -s``` 명령을 참고하여 사용하면 됩니다.
 
 ![](https://cdn.discordapp.com/attachments/631112094015815681/762329491971768340/unknown.png)
+
+
+-----
+# Organizr #
+
+대쉬보드 프로그램
+
+<img src="https://user-images.githubusercontent.com/16184466/53615856-35cc5a80-3b9d-11e9-8428-1f2ae05da2c9.png"></img>
+
+
+◼ [자동 설치](/nginx/normal/install?title=Organizr&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/php/Organizr.sh)
+
+◼ 접속 URL : [/www/Organizr/index.php](/www/Organizr/index.php)
+
+◼ 홈페이지 : [Organizr](https://github.com/causefx/Organizr)
+
+◼ 설치명령
+```
+cd /app/data/nginx/www
+git clone https://github.com/causefx/Organizr
+chmod 777 -R /app/data/nginx/www/Organizr
+```
 
 -----
 # LibreSpeed #
