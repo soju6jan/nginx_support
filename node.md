@@ -118,7 +118,10 @@ fi
 ◼ 실행 예
 ```
 droppy start -f /app/data -c /app/data/nginx/nodejs/droppy/config
+
+droppy start -f /app/data/nginx/nodejs/droppy/files -c /app/data/nginx/nodejs/droppy/config
 ```
+
 
 ◼ conf
 ```
