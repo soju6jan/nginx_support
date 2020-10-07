@@ -28,7 +28,7 @@ imurRoid 님이 만드신 최고의 만화뷰어
 ◼ 설치명령
 ```
 cd /app/data/nginx/www
-git clone https://github.com/imueRoid/myComix
+git clone https://github.com/imueRoid/myComix --depth 1
 chmod 777 -R /app/data/nginx/www/myComix
 ```
 
@@ -50,17 +50,16 @@ chmod 777 -R /app/data/nginx/www/myComix
 ```
 #!/bin/sh
 cd /app/data/nginx/www
-git clone https://github.com/kalcaddle/KodExplorer
+git clone https://github.com/kalcaddle/KodExplorer --depth 1
 chmod 777 -R /app/data/nginx/www/KodExplorer
+mkdir -p /app/data/nginx/www/KodExplorer/data/Group/public/home/share
 ln -s /app/data /app/data/nginx/www/KodExplorer/data/Group/public/home/share/sjva_data
-ln -s /host /app/data/nginx/www/KodExplorer/data/Group/public/home/share/host
-ln -s /mnt /app/data/nginx/www/KodExplorer/data/Group/public/home/share/mnt
 cat <<EOF >/app/data/nginx/www/KodExplorer/config/define.php
 <?php define ('DATA_PATH', '/app/data/nginx/www/KodExplorer/data/');
 EOF
 ```
 
-설치시 기본 데이터 폴더는 ```/app/data/nginx/www/KodExplorer/data/```가 되고 ```/app/data, /host, /mnt``` 폴더가  ```share```폴더 안에 링크됩니다. 필요한 폴더는 위 ```ln -s``` 명령을 참고하여 사용하면 됩니다.
+설치시 기본 데이터 폴더는 ```/app/data/nginx/www/KodExplorer/data/```가 되고 ```/app/data``` 폴더가  ```share```폴더 안에 링크됩니다. 필요한 폴더는 위 ```ln -s``` 명령을 참고하여 사용하면 됩니다.
 
 ![](https://cdn.discordapp.com/attachments/631112094015815681/762329491971768340/unknown.png)
 
@@ -82,7 +81,7 @@ EOF
 ◼ 설치명령
 ```
 cd /app/data/nginx/www
-git clone https://github.com/causefx/Organizr
+git clone https://github.com/causefx/Organizr --depth 1
 chmod 777 -R /app/data/nginx/www/Organizr
 ```
 
