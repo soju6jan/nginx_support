@@ -9,4 +9,5 @@ if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
     pip install --target vendor -r requirements.txt
     #python /app/data/nginx/python/calibre-web/calibre-web/cps.py
 else
+    echo 'uninstall'
 fi
