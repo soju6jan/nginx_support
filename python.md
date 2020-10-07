@@ -8,7 +8,10 @@ webssh는 가벼운 웹 SSH 클라이언트로 간단히 접속이 필요한 경
 
 SJVA 도커내에 ssh server를 설치하면 호스트에 접속해서 ```docker exec -it sjva /bin/sh```과 같은 명령을 쳐서 도커내에 진입할 필요가 없이 웹에서 간단히 shell에 접속할 수 있습니다. 
 
-◼ [설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/python/webssh.sh&arg=install)
+설치시 오래 걸립니다.
+
+
+◼ [설치](/nginx/normal/install?title=webssh&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/python/webssh.sh&arg=install)
 
 ◼ 접속 URL : [/webssh/](/webssh/)
 
@@ -48,7 +51,7 @@ location /tautulli/ {
 }
 ```
 
-◼ [SJVA도커에 ssh server 설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/python/webssh.sh&arg=install_sshd)
+◼ [SJVA도커에 ssh server 설치](/nginx/normal/install?title=sshd&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/python/webssh.sh&arg=install_sshd)
 
 
 ◼ ssh-server 실행
@@ -74,7 +77,7 @@ subpath 설정을 위해 이 폴더에 있는 ```config.ini```을 열어서 ```h
 기존에 사용하는 DB 파일이 있다면 이 폴더에 복사하면 됩니다.
 
 
-◼ [설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/python/tautulli.sh&arg=install)
+◼ [설치](/nginx/normal/install?title=Tautulli&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/python/tautulli.sh&arg=install)
 
 ◼ 접속 URL : [/tautulli/](/tautulli/)
 
@@ -114,7 +117,7 @@ location /tautulli/ {
 Calibre 웹 클라이언트
 
 
-◼ [설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/python/calibre.sh&arg=install)
+◼ [설치](/nginx/normal/install?title=calibre&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/python/calibre.sh&arg=install)
 
 ◼ 접속 URL : [/calibre](/calibre)
 
