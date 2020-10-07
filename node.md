@@ -1,6 +1,6 @@
 # Node.js #
 
-◼ [라이브러리 설치](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/module_node.sh&arg=install) / [라이브러리 삭제](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/module_node_uninstall.sh&arg=uninstall)
+◼ [라이브러리 설치](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/module_node.sh&arg=install) / [라이브러리 삭제](/nginx/normal/install?title=Node.js&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/module_node.sh&arg=uninstall)
 ```
 #!/bin/sh
 if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
