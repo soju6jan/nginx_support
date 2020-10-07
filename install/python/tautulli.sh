@@ -6,4 +6,5 @@ if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
     git clone https://github.com/Tautulli/Tautulli --depth 1
     chmod 777 -R /app/data/nginx/python/tautulli
 else
+    echo 'uninstall'
 fi

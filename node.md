@@ -70,7 +70,7 @@ mstream -u username -x password
 # set music directory
 mstream -m /path/to/music
 
-mstream -m  /app/data/mount_viewer/음악
+mstream -m /app/data/mount_viewer/음악
 ```
 홈페이지에서 실행 명령에 대한 옵션을 확인한 후 command에 등록하세요.
 
