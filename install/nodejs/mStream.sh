@@ -1,8 +1,9 @@
 #!/bin/sh
 if [ "$#" -lt 1 ] || [ "$1" == "install" ] ; then
     cd /app/data/nginx/nodejs
-    git clone -b relative-urls --single-branch https://github.com/IrosTheBeggar/mStream.git --depth 1
+    git clone https://github.com/IrosTheBeggar/mStream.git
     cd mStream
+    git checkout relative-urls
     npm install
     npm link
 else
