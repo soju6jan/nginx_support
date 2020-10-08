@@ -1,6 +1,6 @@
 # NGINX
 1. [소개](/www/manual.php?filename=home)
-2. [설치 & 적용방법](/www/manual.php?filename=manual)
+2. 설치 & 적용방법
 3. [기존 플러그인 변경](/www/manual.php?filename=basic)
 4. 확장프로그램
    1. [php](/www/manual.php?filename=php)
