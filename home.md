@@ -1,13 +1,13 @@
 # NGINX
-1. [소개](/www/manual.php?filename=home)
+1. [소개](/www/update.php?filename=home)
 2. 설치 & 적용방법
-3. [기존 플러그인 변경](/www/manual.php?filename=basic)
+3. [기존 플러그인 변경](/www/update.php?filename=basic)
 4. 확장프로그램
-   1. [php](/www/manual.php?filename=php)
-   2. [Node.js](/www/manual.php?filename=node)
-   3. [python](/www/manual.php?filename=python)
-   4. [Go](/www/manual.php?filename=go)
-   5. [Java](/www/manual.php?filename=java)
+   1. [php](/www/update.php?filename=php)
+   2. [Node.js](/www/update.php?filename=node)
+   3. [python](/www/update.php?filename=python)
+   4. [Go](/www/update.php?filename=go)
+   5. [Java](/www/update.php?filename=java)
 -----
 
 # About nginx ##
@@ -62,7 +62,7 @@ php-fpm7 -R
 
 php제외한 다른 프로그램들은 어떤 방식이든 프로세스를 구동해야 하는데 SJVA command 기능을 통해 할 수도 있지만, SJVA와 상관없이 구동하고 싶다면 이 파일을 편집하여 사용하시면 됩니다. 
 
-정상적으로 설치완료 후에는 [index.html](/www/index.html), [phpinfo.php](/www/phpinfo.php), [manual.php](/www/manual.php?filename=home) 3가지 기본 페이지 접속이 되며, 기존 9998포트를 연결했던 [File Browser](/filebrowser)가 ```/filebrowser``` 서브패스를 통해서도 접속이 됩니다.
+정상적으로 설치완료 후에는 [index.html](/www/index.html), [phpinfo.php](/www/phpinfo.php), [update.php](/www/update.php?filename=home) 3가지 기본 페이지 접속이 되며, 기존 9998포트를 연결했던 [File Browser](/filebrowser)가 ```/filebrowser``` 서브패스를 통해서도 접속이 됩니다.
 
 
 ----
