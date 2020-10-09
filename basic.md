@@ -47,6 +47,19 @@ location /guacamole {
 }
 ```
 
+◼ /var/lib/tomcat/conf/server.xml 수정 (goodstory님 제보)
+168줄부터(정확히는 <host></host> 부분의 내부에) 아래 내용 추가
+
+```
+<Valve className="org.apache.catalina.valves.RemoteIpValve"
+    internalProxies="127.0.0.1"
+    remoteIpHeader="X-Forwarded-For"
+    remoteIpProxiesHeader="X-Forwarded-By"
+    protocolHeader="x-forwarded-proto" /> 
+```
+
+
+
 
 ----
 # Aria2c
