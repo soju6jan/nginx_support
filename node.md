@@ -40,7 +40,7 @@ v10.19.0
 
 ◼ [설치](/nginx/normal/install?title=mStream&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/mStream.sh&arg=install) / [삭제](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/nodejs/mStream.sh&arg=uninstall)
 
-◼ 접속 URL : [/mstrem/](/mstrem/)
+◼ 접속 URL : [/mstraem/](/mstream/)
 
 ◼ 홈페이지 : [mstream.io](https://www.mstream.io/)
 
