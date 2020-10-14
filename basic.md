@@ -74,7 +74,7 @@ location /guacamole {
 
 (localhost aria2c가 실행되는 곳이 아닌 브라우저를 실행한 곳)
 
-◼ [설치](/nginx/normal/install?title=aria2c&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/pha/aria2c.sh&arg=install)
+◼ [설치](/nginx/normal/install?title=aria2c&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/php/aria2c.sh&arg=install)
 
 ◼ 접속 URL : [/www/webui-aria2/docs/index.html](/www/webui-aria2/docs/index.html)
 
