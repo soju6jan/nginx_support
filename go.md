@@ -12,10 +12,11 @@ SJVA에 기본 포함된 파일브라우저가 go로 작성된 프로그램입�
 
 PMS Proxy
 
+> 웹페이지는 문제 없으나 실제 PLEX에 붙이는 건 테스트 못함
 
 ◼ [설치](/nginx/normal/install?title=myComix&script_url=https://raw.githubusercontent.com/soju6jan/nginx_support/main/install/go/xTeVe.sh&arg=install)
 
-◼ 접속 URL : [/xteve/web/](/mstrem/)
+◼ 접속 URL : [/xteve/web/](/xteve/web/)
 
 ◼ [홈페이지](https://xteve.de/)
 
